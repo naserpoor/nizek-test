@@ -20,7 +20,7 @@ class SignupFragment : Fragment(R.layout.fragment_signup) {
     val viewModel by viewModel<SignupViewModel>()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-         databinding = FragmentSignupBinding.bind(super.onCreateView(inflater, container, savedInstanceState) ?: return null)
+        databinding = FragmentSignupBinding.bind(super.onCreateView(inflater, container, savedInstanceState) ?: return null)
         databinding.lifecycleOwner = viewLifecycleOwner
         databinding.viewModel = viewModel
 

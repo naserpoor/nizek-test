@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">NizekTest</string>
+    <string name="welcome_message">Welcome %s</string>
+    <string name="logout">Logout</string>
+    <string name="register">Register</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="full_name">Full Name</string>
+    <string name="login">Login</string>
+    <string name="error_invalid_full_name">Your full name should be more than 5 characters</string>
+    <string name="error_invalid_username">Your user name should be more than 8 characters</string>
+    <string name="error_invalid_password">Your password should be more than 8 characters</string>
+    <string name="error_login_invalid_input">Username or password is incorrect</string>
+</resources>

@@ -1,0 +1,21 @@
+<resources>
+    <declare-styleable name="CustomizableGenericButton">
+        <attr name="iconSize" format="dimension" />
+        <attr name="iconTextMargin" format="dimension" />
+        <attr name="buttonType" format="enum" >
+            <enum name="titleOnly" value="0"/>
+            <enum name="titleDescriptionOnly" value="1"/>
+            <enum name="allVisible" value="2"/>
+        </attr>
+        <attr name="title" format="string"/>
+        <attr name="description" format="string"/>
+        <attr name="icon" format="reference"/>
+        <attr name="titleSize" format="dimension"/>
+        <attr name="descriptionSize" format="dimension"/>
+        <attr name="titleColor" format="color"/>
+        <attr name="descriptionColor" format="color"/>
+        <attr name="cornerRadius" format="dimension"/>
+        <attr name="buttonBackgroundColor" format="color"/>
+        <attr name="touchEffectColor" format="color"/>
+    </declare-styleable>
+</resources>

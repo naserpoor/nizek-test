@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="fullName"
+            type="androidx.lifecycle.LiveData" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/fragment_root_padding"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="@{@string/welcome_message(fullName)}"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+
+        <ir.alireza.naserpour.iconicbuttonlib.CustomizableGenericButton
+            android:id="@+id/logout_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.448"
+            app:layout_constraintStart_toStartOf="parent"
+            app:title="@string/logout"
+            style="@style/ButtonStyle"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
